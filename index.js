@@ -63,7 +63,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((responses => {
         console.log("Generating Professional README.md File...");
-        writeToFile("./dist/README.md", generateMarkdown({ ...responses}));
+        writeToFile("/dist/README.md", generateMarkdown({ ...responses}));
     }));
 }
 
