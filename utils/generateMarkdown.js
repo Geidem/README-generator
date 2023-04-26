@@ -11,7 +11,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "none") {
-    return `[License](#license)`;
+    return `• [License](#license)`;
   }
   return "";
 
@@ -37,7 +37,6 @@ function generateMarkdown(data) {
   • [Installation](#installation)
   • [Usage](#usage)
   • [Credits](#credits)
-  • [License](#license)
   ${renderLicenseLink(data.license)}
   ## Description
   ${data.description}
